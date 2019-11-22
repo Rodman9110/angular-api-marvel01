@@ -15,6 +15,10 @@ import { MatListModule } from '@angular/material/list';
 import { CharacterComponent } from './characters/character/character.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CharactersComponent } from './characters/characters.component';
+import { FlexLayoutModule } from "@angular/flex-layout";
+import { MatFormField, MatCardModule,  } from "@angular/material";
+import { MatFormFieldModule } from "@angular/material/form-field";
+
 
 @NgModule({
   declarations: [
@@ -33,8 +37,13 @@ import { CharactersComponent } from './characters/characters.component';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    HttpClientModule
-    
+    HttpClientModule,
+    FlexLayoutModule,
+    MatIconModule,
+    // MatFormField,
+    MatCardModule,
+    MatFormFieldModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
