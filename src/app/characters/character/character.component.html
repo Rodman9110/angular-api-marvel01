@@ -1,17 +1,10 @@
-<p>personaje</p>
-
-  <!-- <div fxFlex fxLayout="column">
-    <div fxLayout="row wrap">
-    <div fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100" fxLayout="column" 
-    *ngFor="let character of allCharacters | async">
-    <mat-card>
-        <img mat-card-image src="{{character.thumbnail.path}}.{{character.thumbnail.extension}}" alt="{{character.name}}">
-        <mat-card-title>
-            {character.name}
-        </mat-card-title>
-    </mat-card>
-    </div>
-    </div>
-</div>   -->
+<<div fxFlex fxLayout="column">
+        <div fxLayout="row wrap">
+          <div fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100" fxLayout="column" 
+            *ngFor="let character of allCharacters | async" style="padding: 5px;">
+            <app-character [character]="character"></app-character>
+          </div>
+         </div>
+      </div>   
 
    
