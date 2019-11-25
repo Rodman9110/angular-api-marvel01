@@ -20,14 +20,21 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 // import { MatFormFieldModule } from "@angular/material/form-field";
 // import { MatFormField } from "@angular/material/form-field";
 
-import { MatCardModule, MatToolbarModule, MatSidenavModule, MatIconModule, MatListModule, MatFormFieldModule  } from "@angular/material";
+import { MatCardModule, MatToolbarModule, MatSidenavModule, MatIconModule, MatListModule, MatFormFieldModule, MatInput, MatFormField, MatInputModule, MatSpinner, MatProgressSpinnerModule  } from "@angular/material";
+import { SearchComponent } from './search/search.component';
+import { FormControl } from '@angular/forms';
+import { LoadingComponent } from './loading/loading.component';
+import { SearchCharacterComponent } from './search/search-character/search-character.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     CharacterComponent,
-    CharactersComponent
+    CharactersComponent,
+    SearchComponent,
+    LoadingComponent,
+    SearchCharacterComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +50,11 @@ import { MatCardModule, MatToolbarModule, MatSidenavModule, MatIconModule, MatLi
     FlexLayoutModule,
     // MatFormField,
     MatCardModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatInputModule,
+    // MatFormField,
+    // FormControl
+     MatProgressSpinnerModule
 
   ],
   providers: [],
