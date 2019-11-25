@@ -11,6 +11,7 @@ export class SearchComponent implements OnInit {
 
   character: any[] = [];
   loading: boolean;
+  
   constructor(private service: CharactersApiService) { }
 
   Search(termino: string){

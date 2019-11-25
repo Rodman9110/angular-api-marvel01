@@ -21,11 +21,11 @@
 
 <app-loading class="m-5" *ngIf="loading"></app-loading>
 
- <!-- <app-characters *ngIf="!loading" ></app-characters>  -->
+  <!-- <app-search-character *ngIf="!loading" ></app-search-character>   -->
 
  
 
- <div fxFlex fxLayout="column">
+  <div fxFlex fxLayout="column">
   <div fxLayout="row wrap">
     <div fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100" fxLayout="column" 
       *ngFor="let item of character " style="padding: 5px;">
@@ -42,5 +42,5 @@
       </mat-card>
     </div>
    </div>
-</div>   
+</div>    
 

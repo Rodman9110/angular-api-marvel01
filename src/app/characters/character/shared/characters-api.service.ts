@@ -27,8 +27,5 @@ export class CharactersApiService {
       console.log(termino);
       return this.http.get<any>(`https:gateway.marvel.com/v1/public/characters?name=${termino}&apikey=${this.PUBLIC_KEY}&hash=${this.HASH}`)
       .pipe(map((data: any) => data.data.results))
-      
-      
-
     }
 }
